@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud DevOps Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        header h1 span {
+            color: #38bdf8;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 70px auto;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .status {
+            margin-top: 40px;
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #334155;
+            text-align: center;
+        }
+
+        .online {
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            padding: 25px;
+            color: #64748b;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cloud<span>DevOps</span></h1>
+    <p>Python + Docker</p>
+</header>
+
+<div class="container">
+
+    <section class="hero">
+        <h2>Cloud & DevOps Dashboard</h2>
+
+        <p>
+            Python Flask application running inside a Docker container.
+        </p>
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+            <div class="icon">🐍</div>
+            <h3>Python</h3>
+            <p>
+                Web application developed using Python and Flask.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐳</div>
+            <h3>Docker</h3>
+            <p>
+                Application packaged and running inside a Docker container.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">☁️</div>
+            <h3>Cloud</h3>
+            <p>
+                Ready to be deployed on a cloud server.
+            </p>
+        </div>
+
+    </section>
+
+    <div class="status">
+        Application Status:
+        <span class="online">● Running Successfully</span>
+    </div>
+
+</div>
+
+<footer>
+    Cloud & DevOps Project — Python Flask + Docker
+</footer>
+
+</body>
+</html>
